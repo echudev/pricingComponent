@@ -55,6 +55,7 @@ align-items:center;
 /*APARIENCIA DEL SLIDER*/
 .slidecontainer{
     width:100%;
+    touch-action:none;
 }
 #myRange{
     -webkit-appearance: none;
