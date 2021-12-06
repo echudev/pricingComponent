@@ -5,7 +5,7 @@ var switch1Body = document.getElementById('switchBody');//el cuerpo del switch (
 var slider = document.getElementById('myRange');
 
 //mover el mouse sobre el slider ajusta el background dependiendo la posición
-slider.addEventListener("mousemove", function () {
+slider.addEventListener("pointermove", function () {
     var x = slider.value;
     var color = 'linear-gradient(90deg,var(--Soft-Cyan-FullSliderBar)' + x + '%,var(--LightGrayishBlue-EmptySliderBar)' + x + '%)'
     slider.style.background = color;
