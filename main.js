@@ -23,35 +23,35 @@ function planState() {
     let x = slider.value;
     let isChecked = switch1.checked;
 
-    if (x == 0) {
+    if (x>=0 && x<20) {
         document.getElementById('counter').innerText = "10K"
         if (isChecked) {
             document.getElementById('price').innerText = "$" + planes[0][2].toFixed(2)
         } else {
             document.getElementById('price').innerText = "$" + planes[0][1].toFixed(2)
         }
-    } else if (x == 25) {
+    } else if (x>=20 && x<40) {
         document.getElementById('counter').innerText = "50K"
         if (isChecked) {
             document.getElementById('price').innerText = "$" + planes[1][2].toFixed(2)
         } else {
             document.getElementById('price').innerText = "$" + planes[1][1].toFixed(2)
         }
-    } else if (x == 50) {
+    } else if (x>=40 && x<60) {
         document.getElementById('counter').innerText = "100K"
         if (isChecked) {
             document.getElementById('price').innerText = "$" + planes[2][2].toFixed(2)
         } else {
             document.getElementById('price').innerText = "$" + planes[2][1].toFixed(2)
         }
-    } else if (x == 75) {
+    } else if (x>=60 && x<80) {
         document.getElementById('counter').innerText = "500K"
         if (isChecked) {
             document.getElementById('price').innerText = "$" + planes[3][2].toFixed(2)
         } else {
             document.getElementById('price').innerText = "$" + planes[3][1].toFixed(2)
         }
-    } else if (x == 100) {
+    } else if (x>=80 && x<100) {
         document.getElementById('counter').innerText = "1M"
         if (isChecked) {
             document.getElementById('price').innerText = "$" + planes[4][2].toFixed(2)
